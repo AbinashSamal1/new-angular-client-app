@@ -1,0 +1,25 @@
+<!-- navbar -->
+
+<app-navbar></app-navbar>
+
+<!-- contents -->
+
+<ng-container *ngFor="let client; for: clientList">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Clients Name</th>
+        <th scope="col">Projects</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">{{ client.id }}</th>
+        <a routerLink="">{{ client.title }}</a>
+        <td>{{ client.project }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>

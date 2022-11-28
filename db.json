@@ -1,0 +1,22 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "title": "A-client",
+      "address": "a tower,ab rd,XYZ city,100111,Ind",
+      "phone": "9000900012",
+      "email": "aClient@abc.com",
+      "project": ["project1", "project2","projectC"]
+     
+    },
+    {
+      "id": 2,
+      "title": "B-client",
+      "address": "x tower,xy rd,ABC city,201001,Ind",
+      "phone": "9000900012",
+      "email": "aClient@abc.com",
+      "project": ["projectA", "projectB", "projectC"]
+     
+    }
+  ]
+}

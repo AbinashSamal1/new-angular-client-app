@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 import { client } from '../model/clientprojetcs.model';
 import { ClientProjectsService } from '../services/client-projects.service';
 
@@ -9,15 +10,21 @@ import { ClientProjectsService } from '../services/client-projects.service';
 })
 export class ClientsComponent implements OnInit {
   clientList: client[] = [];
-  constructor(private api: ClientProjectsService) {}
+  constructor(private api: ClientProjectsService, private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.getClientData();
+    this.getCLientName();
   }
-  
-  getClientData() {
+  getCLientName() {
     this.api.getClient().subscribe((res) => {
       this.clientList = res;
     });
   }
+
+  // countNumOfProject() {
+  //   const result = this.clientList
+  //     .map((res) => res.project.length)
+  //     .reduce((acc, ele) => acc + ele, 0);
+  //   console.log('result', result);
+  // }
 }

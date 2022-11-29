@@ -3,20 +3,19 @@
     {
       "id": 1,
       "title": "A-client",
-      "address": "a tower,ab rd,XYZ city,100111,Ind",
-      "phone": "9000900012",
-      "email": "aClient@abc.com",
-      "project": ["project1", "project2","projectC"]
-     
+      "address": "A tower,ab rd,XYZ city,100111,Ind",
+      "phone": 9000900012,
+      "email": "A-Client@abc.com",
+      "project": ["project1", "project2"]
     },
     {
       "id": 2,
       "title": "B-client",
       "address": "x tower,xy rd,ABC city,201001,Ind",
-      "phone": "9000900012",
+      "phone": 9000900012,
       "email": "aClient@abc.com",
       "project": ["projectA", "projectB", "projectC"]
-     
     }
   ]
 }
+

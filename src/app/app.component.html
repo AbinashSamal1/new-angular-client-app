@@ -1,1 +1,60 @@
+<nav class="navbar bg-primary justify-content-between">
+  <div>
+    <a class="navbar-brand text-white m-3">My App</a>
+    <a class="text-white btn"
+      ><i class="bi bi-house" routerLink="clients"></i
+    ></a>
+    <a
+      href=""
+      class="text-white text-decoration-none h6 m-4"
+      routerLink="projects"
+      >Projects</a
+    >
+    <a
+      href=""
+      class="text-white text-decoration-none h6"
+      routerLink="timesheets"
+      >Timesheets</a
+    >
+  </div>
+  <div
+    class="nav-item mx-3"
+    ngbDropdown
+    display="dynamic"
+    placement="bottom-end"
+  >
+    <a
+      class="nav-link text-white"
+      tabindex="0"
+      ngbDropdownToggle
+      id="navbarDropdown3"
+      role="button"
+    >
+      <i class="bi bi-person-circle"></i>
+    </a>
+    <div
+      ngbDropdownMenu
+      aria-labelledby="navbarDropdown3"
+      class="dropdown-menu"
+    >
+      <a ngbDropdownItem (click)="$event.preventDefault()" routerLink="settings"
+        ><i class="bi bi-gear-fill"></i>Settings</a
+      >
+      <a
+        ngbDropdownItem
+        (click)="$event.preventDefault()"
+        routerLink="settings/profile"
+        ><i class="bi bi-person-lines-fill"></i>My Profile</a
+      >
+      <a
+        ngbDropdownItem
+        href="#"
+        (click)="$event.preventDefault()"
+        routerLink="settings/2fa"
+        ><i class="bi bi-radioactive"></i>2fa</a
+      >
+    </div>
+  </div>
+</nav>
+
 <router-outlet></router-outlet>

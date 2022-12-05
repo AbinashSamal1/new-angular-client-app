@@ -6,7 +6,7 @@
     ></a>
     <a
       href=""
-      class="text-white text-decoration-none h6 m-4"
+      class="text-white text-decoration-none h6 m-5"
       routerLink="projects"
       >Projects</a
     >
@@ -18,19 +18,19 @@
     >
   </div>
   <div
-    class="nav-item mx-3"
+    class="nav-item mx-4"
     ngbDropdown
     display="dynamic"
     placement="bottom-end"
   >
     <a
-      class="nav-link text-white"
+      class="nav-link text-white btn"
       tabindex="0"
       ngbDropdownToggle
       id="navbarDropdown3"
       role="button"
     >
-      <i class="bi bi-person-circle"></i>
+    <i class="bi bi-menu-button"></i>
     </a>
     <div
       ngbDropdownMenu
@@ -51,7 +51,7 @@
         href="#"
         (click)="$event.preventDefault()"
         routerLink="settings/2fa"
-        ><i class="bi bi-radioactive"></i>2fa</a
+        ><i class="bi bi-key"></i>2fa</a
       >
     </div>
   </div>

@@ -1,6 +1,6 @@
 export class client {
   id!: number;
-  title!: string;
+  name!: string;
   address!: string;
   phone!: number;
   email!: string;
